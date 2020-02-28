@@ -1,18 +1,18 @@
 const kassaApp = "Kassa-v1"
 const assets = [
-  "/",
-  "/index.html",
-  "/css/style.css",
-  "/css/bootstrap.min.css",
-  "/css/bootstrap.min.css.map",
-  "/js/kassa.js",
-  "/js/jquery.slim.min.js",
-  "/js/jquery.slim.min.js.map",
-  "/js/bootstrap.min.js",
-  "/js/bootstrap.min.js.map",
-  "/js/popper.min.js",
-  "/js/popper.min.js.map",
-  "/js/serviceWorker.js"
+  "/wandelkassa/",
+  "/wandelkassa/index.html",
+  "/wandelkassa/css/style.css",
+  "/wandelkassa/css/bootstrap.min.css",
+  "/wandelkassa/css/bootstrap.min.css.map",
+  "/wandelkassa/js/kassa.js",
+  "/wandelkassa/js/jquery.slim.min.js",
+  "/wandelkassa/js/jquery.slim.min.js.map",
+  "/wandelkassa/js/bootstrap.min.js",
+  "/wandelkassa/js/bootstrap.min.js.map",
+  "/wandelkassa/js/popper.min.js",
+  "/wandelkassa/js/popper.min.js.map",
+  "/wandelkassa/js/serviceWorker.js"
 ]
 
 self.addEventListener("install", installEvent => {
