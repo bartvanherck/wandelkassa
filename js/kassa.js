@@ -193,7 +193,7 @@ fill_in_euro_cents();
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", function() {
       navigator.serviceWorker
-        .register("js/serviceWorker.js")
+        .register("/wandelkassa/js/serviceWorker.js")
         .then(res => console.log("service worker registered"))
         .catch(err => console.log("service worker not registered", err))
     })
