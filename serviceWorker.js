@@ -12,7 +12,7 @@ const assets = [
   "/wandelkassa/js/bootstrap.min.js.map",
   "/wandelkassa/js/popper.min.js",
   "/wandelkassa/js/popper.min.js.map",
-  "/wandelkassa/js/serviceWorker.js"
+  "/wandelkassa/serviceWorker.js"
 ]
 
 self.addEventListener("install", installEvent => {
