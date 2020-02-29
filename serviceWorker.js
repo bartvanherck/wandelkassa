@@ -1,4 +1,4 @@
-const kassaApp = "Kassa-v2"
+const kassaApp = "Kassa-v3"
 const expectedCaches = [kassaApp];
 
 const assets = [
@@ -42,7 +42,7 @@ self.addEventListener('fetch', function(event) {
           }
         })
       )).then(() => {
-        console.log('V2 now ready to handle fetches!');
+        console.log('New version ' + kassaApp + ' now ready to handle fetches!');
       })
     );
   });

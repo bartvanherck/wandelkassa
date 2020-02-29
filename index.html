@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/kassa.css">
 
     <!-- ios support -->
@@ -42,52 +42,52 @@
     </nav>
     <div id="viewKassa" class="container-fluid topwhitespace show">
       <div class="row">
-        <div class="col-sm">
+        <div class="col">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-sm">
+              <div class="col">
                 <div class="border border-primary rounded number-items green" id="totaal_kol1">0</div>
               </div>
             </div>
             <div class="row topwhitespace">
-              <div class="col-sm">
+              <div class="col">
                 <div class="btn-group items-button-group" role="group" aria-label="knoppen">
-                  <button id = "min_kol1" type="button" class="btn btn-danger">- 1</button>
-                  <button id = "add_kol1" type="button" class="btn btn-success">+ 1</button>
+                  <button id = "min_kol1" type="button" class="btn btn-danger">-</button>
+                  <button id = "add_kol1" type="button" class="btn btn-success">+</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm">
+        <div class="col">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-sm">
+              <div class="col">
                 <div id="totaal_kol2" class="border border-primary rounded number-items yellow">0</div>
               </div>
             </div>
             <div class="row topwhitespace">
-              <div class="col-sm">
+              <div class="col">
                 <div class="btn-group items-button-group" role="group" aria-label="knoppen">
-                  <button id = "min_kol2" type="button" class="btn btn-danger">- 1</button>
-                  <button id = "add_kol2" type="button" class="btn btn-success">+ 1</button>
+                  <button id = "min_kol2" type="button" class="btn btn-danger">-</button>
+                  <button id = "add_kol2" type="button" class="btn btn-success">+</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm">
+        <div class="col">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-sm">
+              <div class="col">
                 <div id="totaal_kol3" class="border border-primary rounded number-items gray">0</div>
               </div>
             </div>
             <div class="row topwhitespace">
-              <div class="col-sm">
+              <div class="col">
                 <div class="btn-group items-button-group" role="group" aria-label="knoppen">
-                  <button id = "min_kol3" type="button" class="btn btn-danger">- 1</button>
-                  <button id = "add_kol3" type="button" class="btn btn-success">+ 1</button>
+                  <button id = "min_kol3" type="button" class="btn btn-danger">-</button>
+                  <button id = "add_kol3" type="button" class="btn btn-success">+</button>
                 </div>
               </div>
             </div>
@@ -95,14 +95,14 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm">
+        <div class="col">
           <div id="totaal" class="resultaat">
             0 &euro;
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm">
+        <div class="col">
           <div class="border border-primary volgende">
             <button id="wissen" type="button" class="btn btn-secondary volgende">Volgende</button>
           </div>
@@ -111,50 +111,100 @@
     </div>
     <div id="viewConfiguratie" class="container-fluid topwhitespace hide">
       <div class="row">
-        <div class="col-sm">
+        <div class="col">
           <div class="container-fluid">
+            <!-- De box waarover het gaat -->
             <div class="row">
-              <div class="col-sm">
-                <div class="border border-primary rounded number-items green" id="totaal_kol1">&nbsp;</div>
+              <div class="col">
+                <div class="border border-primary rounded number-items green" id="kleurenbox_kol1">&nbsp;</div>
               </div>
             </div>
+            <!-- De Eurocenten -->
             <div class="row topwhitespace">
-              <div class="col-sm-6 config_value_font">Eurocents: </div>
-              <div class="col-sm-6">
+              <div class="col config_value_font">Eurocents</div>
+            </div>
+            <div class="row topwhitespace">
+              <div class="col">
                 <input class="form-control" type="text" id="inputEurocents_1">
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col-sm">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm">
-                <div class="border border-primary rounded number-items yellow" id="totaal_kol1">&nbsp;</div>
-              </div>
-              
+            <!-- De kleurenselectie -->
+            <div class="row topwhitespace">
+              <div class="col config_value_font">Kleuren</div>
             </div>
             <div class="row topwhitespace">
-              <div class="col-sm-6 config_value_font">Eurocents: </div>
-              <div class="col-sm-6">
+              <div class="btn-group kleurengroep" role="group" aria-label="knoppen">
+                <button id = "col_1_color_1" type="button" class="btn yellow">&nbsp;</button>
+                <button id = "col_1_color_2" type="button" class="btn green">&nbsp;</button>
+                <button id = "col_1_color_3" type="button" class="btn blue ">&nbsp;</button>
+                <button id = "col_1_color_4" type="button" class="btn white">&nbsp;</button>
+                <button id = "col_1_color_5" type="button" class="btn red">&nbsp;</button>
+                <button id = "col_1_color_6" type="button" class="btn gray">&nbsp;</button>
+                <button id = "col_1_color_7" type="button" class="btn purple">&nbsp;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="border border-primary rounded number-items yellow" id="kleurenbox_kol2">&nbsp;</div>
+              </div>
+            </div>
+            <div class="row topwhitespace">
+              <div class="col config_value_font">Eurocents</div>
+            </div>
+            <div class="row topwhitespace">
+              <div class="col">
                 <input class="form-control" type="text" id="inputEurocents_2">
               </div>
             </div>
+            <!-- De kleurenselectie -->
+            <div class="row topwhitespace">
+              <div class="col config_value_font">Kleuren</div>
+            </div>
+            <div class="row topwhitespace bottomwhitespace">
+              <div class="btn-group kleurengroep" role="group" aria-label="knoppen">
+                <button id = "col_2_color_1" type="button" class="btn yellow">&nbsp;</button>
+                <button id = "col_2_color_2" type="button" class="btn green">&nbsp;</button>
+                <button id = "col_2_color_3" type="button" class="btn blue ">&nbsp;</button>
+                <button id = "col_2_color_4" type="button" class="btn white">&nbsp;</button>
+                <button id = "col_2_color_5" type="button" class="btn red">&nbsp;</button>
+                <button id = "col_2_color_6" type="button" class="btn gray">&nbsp;</button>
+                <button id = "col_2_color_7" type="button" class="btn purple">&nbsp;</button>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="col-sm">
+        <div class="col">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-sm">
-                <div class="border border-primary rounded number-items gray" id="totaal_kol1">&nbsp;</div>
+              <div class="col">
+                <div class="border border-primary rounded number-items gray" id="kleurenbox_kol3">&nbsp;</div>
               </div>
             </div>
             <div class="row topwhitespace">
-              <div class="col-sm-6 config_value_font">Eurocents: </div>
-              <div class="col-sm-6">
+              <div class="col config_value_font">Eurocents</div>
+            </div>
+            <div class="row topwhitespace">
+              <div class="col">
                 <input class="form-control" type="text" id="inputEurocents_3">
+              </div>
+            </div>
+            <!-- De kleurenselectie -->
+            <div class="row topwhitespace">
+              <div class="col config_value_font">Kleuren</div>
+            </div>
+            <div class="row topwhitespace">
+              <div class="btn-group kleurengroep" role="group" aria-label="knoppen">
+                <button id = "col_3_color_1" type="button" class="btn yellow">&nbsp;</button>
+                <button id = "col_3_color_2" type="button" class="btn green">&nbsp;</button>
+                <button id = "col_3_color_3" type="button" class="btn blue ">&nbsp;</button>
+                <button id = "col_3_color_4" type="button" class="btn white">&nbsp;</button>
+                <button id = "col_3_color_5" type="button" class="btn red">&nbsp;</button>
+                <button id = "col_3_color_6" type="button" class="btn gray">&nbsp;</button>
+                <button id = "col_3_color_7" type="button" class="btn purple">&nbsp;</button>
               </div>
             </div>
           </div>
